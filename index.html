@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> index </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(180deg, #A8D8E2 29.33%, #FFF 127.5%);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            width: 700px;
+            height: 300px;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        div .a1 {
+            left: 50%;
+            top: 50%;
+            color: #DAF3F9;
+            font-size: 64px;
+            font-weight: 600;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-shadow: 5px 6px 7px rgba(0, 0, 0, 0.20);
+            letter-spacing: -3px;
+            flex-shrink: 0;
+            color: #DAF3F9;
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            font-style: normal;
+            line-height: normal;
+        }
+
+        div .a2 img {
+            left: 10px;
+            position: absolute;
+            z-index: 1;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        div .a3 img {
+            right: 46px;
+            flex-shrink: 0;
+            position: absolute;
+            right: 50px;
+            z-index: 1;
+            animation: bounce 3s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-15px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        div .a4 img {
+            width: 100px;
+            position: absolute;
+            right: 5px;
+            top: 70px;
+            z-index: 1;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        div .a5 img {
+            width: 267.47px;
+            height: 256.089px;
+            position: absolute;
+            z-index: 3;
+            animation: identifier 3s infinite;
+        }
+
+        @keyframes identifier {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+div .a6 img {
+            width: 220px;
+            position: absolute;
+            right: 20px;
+            bottom: 1px;
+            z-index: 1;
+            animation: mymove 3s infinite;
+        }
+
+        @keyframes mymove {
+        0%  {rotate: 0deg;}
+
+        50% {rotate: -20deg;}
+
+        100% {rotate: 0deg;}
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div>
+            <p class="a1">MUSIC LIFE</p>
+            <p class="a2"><img src="./images/Music.png" alt="music1"></p>
+            <p class="a3"><img src="./images/Music2.png" alt="music2"></p>
+            </p>
+            <p class="a4"><img src="./images/Like.png" alt="like"></p>
+            </p>
+            <p class="a5"><a href="https://music.apple.com/kr/browse" target="_blank"><img src="./images/Headphones.png" alt="headphones"></a></p>
+            </p>
+            <p class="a6"><img src="./images/House.png" alt="house"></p>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
